@@ -15,6 +15,7 @@ import edu.wpi.first.wpilibj.Talon;
  * I LIEK ROBITS BRUHHHH!
  */
 public class Robot extends SampleRobot {
+<<<<<<< HEAD
 
 	Joystick TheDeathOfTheEntireUniverse = new Joystick(1);
 //	// Talon AssassinsCreed = new Talon(0);
@@ -27,6 +28,21 @@ public class Robot extends SampleRobot {
 //	
 	MechumDrive drive = new MechumDrive(0, 1, 2, 3);
 	
+=======
+	
+	Joystick stick = new Joystick(1);
+	Button sol1 = new JoystickButton(stick,1);
+	Button c1 = new JoystickButton(stick,2);
+	Button c0 = new JoystickButton(stick,3);
+//	Talon AssassinsCreed = new Talon(0);
+//	Talon Urhmagerd = new Talon(1);
+	Talon DoUEvenLiftBro = new Talon(2);
+	RobotDrive RoadRage = new RobotDrive(0, 1);
+	Solenoid claw = new Solenoid(1,4);
+    Compressor *c =new Compressor(0);
+    
+    
+>>>>>>> origin/master
 	public Robot() {
 
 	}
@@ -50,6 +66,7 @@ public class Robot extends SampleRobot {
 	        
 //		AReallyBigQuantumSuperComputer.start();
 		while (isOperatorControl()) {
+<<<<<<< HEAD
 //			RoadRage.arcadeDrive(TheDeathOfTheEntireUniverse);
 //			DoUEvenLiftBro.set(TheDeathOfTheEntireUniverse.getZ());
 //			if( TheDeathOfTheEntireUniverse.getRawButton(3)==true){
@@ -59,6 +76,15 @@ public class Robot extends SampleRobot {
 //			}
 //		
 			drive.Drive(TheDeathOfTheEntireUniverse);
+=======
+			RoadRage.arcadeDrive(stick);
+			if (button1) {
+				
+			}
+			if (c->set)
+			DoUEvenLiftBro.set(stick.getZ());
+			
+>>>>>>> origin/master
 		}
 
 	}
